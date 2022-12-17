@@ -8,6 +8,11 @@ function constructURL(text)
 {
     return serverURL + "?" + "text=" + text;
 }
+
+funstion errorHandler(error){
+    console.log("Error occured",error);
+    alert("Error! There's something wrong with the server.");
+}
  
 function doFetch(text)
 {
@@ -19,6 +24,7 @@ function doFetch(text)
             outputDiv.innerText = translatedText;
          }
          ) 
+    .catch(errorHandler);
 };
 
 
