@@ -9,7 +9,7 @@ function constructURL(text)
     return serverURL + "?" + "text=" + text;
 }
 
-funstion errorHandler(error){
+function errorHandler(error){
     console.log("Error occured",error);
     alert("Error! There's something wrong with the server.");
 }
